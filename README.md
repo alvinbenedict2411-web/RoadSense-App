@@ -866,8 +866,6 @@ Do not place this file in the project root.
 
 The application uses the Firebase configuration provided by this file to connect to your own Firebase project.
 
-**Do not upload your personal Firebase configuration file to your public repository.**
-
 ### Step 4: Enable Firebase Authentication
 
 1. Open **Authentication** in the Firebase Console.
