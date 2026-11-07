@@ -1,0 +1,20 @@
+<!--
+    Native (system) splash icon: the same glowing point that Stage 1 of the Compose
+    splash starts from, at ~50% brightness. Canvas is 288dp, as Android 12+ expects
+    for a splash icon without an icon background.
+    Radial gradients inside vectors need minSdk 24+.
+ -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:width="288dp" android:height="288dp" android:viewportWidth="288" android:viewportHeight="288">
+    <!--  Soft glow, radius 44dp  -->
+    <path android:pathData="M144,144m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="144" android:centerY="144" android:gradientRadius="44">
+                <item android:offset="0.0" android:color="#461FD0FF"/>
+                <item android:offset="0.35" android:color="#241E6BFF"/>
+                <item android:offset="1.0" android:color="#001E6BFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!--  Bright core, radius 5dp  -->
+    <path android:fillColor="#80FFFFFF" android:pathData="M144,144m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+</vector>

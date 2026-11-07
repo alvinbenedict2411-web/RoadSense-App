@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Existing application theme -->
+    <style name="Theme.BeastMode_5"
+        parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Native Android splash screen theme -->
+    <style name="Theme.RoadSense.Starting"
+        parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">
+            @color/roadsense_splash_background
+        </item>
+
+        <item name="windowSplashScreenAnimatedIcon">
+            @drawable/roadsense_splash_dot
+        </item>
+
+        <item name="postSplashScreenTheme">
+            @style/Theme.BeastMode_5
+        </item>
+
+    </style>
+
+</resources>
