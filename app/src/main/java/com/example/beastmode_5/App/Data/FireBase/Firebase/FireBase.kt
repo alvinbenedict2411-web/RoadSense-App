@@ -51,9 +51,14 @@ class FireBase(val application: Application) {
                             existingpotholesInCloud.add(it)
                         }
                     }
+
+                   val activePotholesInCloud= existingpotholesInCloud.filter {
+                        it.status!="Resolved"
+                    }
+
                     val potholestoupload = potholes.filter { pothole ->
                         val hasnokey = pothole.firebasekey == null
-                        val isduplicate = existingpotholesInCloud.any { existingPothole ->
+                        val isduplicate = activePotholesInCloud.any { existingPothole ->
                             calculateDistance(
                                 pothole.latitude,
                                 pothole.longitude,
@@ -74,7 +79,7 @@ class FireBase(val application: Application) {
 
                     potholes.forEach { pothole -> // can use potholestoupload instead of potholes i used potholes bcz i had coded before only so its ok
                         val hasNoFireBaseKey = pothole.firebasekey == null
-                        val isDuplicate = existingpotholesInCloud.any { existingPothole ->
+                        val isDuplicate = activePotholesInCloud.any { existingPothole ->
                             calculateDistance(
                                 pothole.latitude,
                                 pothole.longitude,
