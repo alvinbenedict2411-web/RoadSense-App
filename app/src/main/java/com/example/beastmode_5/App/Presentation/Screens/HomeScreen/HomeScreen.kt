@@ -358,7 +358,7 @@ fun HomeScreen(viewmodel: HomeScreenViewModel,navController: NavController) {
                                         .clickable(onClick = {
                                             navController.navigate(BeastMode5Routes.DetailsScreen){
                                                 popUpTo(BeastMode5Routes.HomeScreen){
-                                                    inclusive = true
+                                                    inclusive = false
                                                     saveState = true
                                                 }
                                             }
@@ -433,7 +433,7 @@ fun HomeScreen(viewmodel: HomeScreenViewModel,navController: NavController) {
                                         .clickable(onClick = {
                                             navController.navigate(BeastMode5Routes.DetailsScreen){
                                                 popUpTo(BeastMode5Routes.HomeScreen){
-                                                    inclusive = true
+                                                    inclusive = false
                                                     saveState = true
                                                 }
                                             }
@@ -603,7 +603,7 @@ fun HomeScreen(viewmodel: HomeScreenViewModel,navController: NavController) {
                                     .clickable(onClick = {
                                         navController.navigate(BeastMode5Routes.DetailsScreen){
                                             popUpTo(BeastMode5Routes.HomeScreen) {
-                                                inclusive = true
+                                                inclusive = false
                                                 saveState = true
                                             }
                                         }
@@ -677,7 +677,7 @@ fun HomeScreen(viewmodel: HomeScreenViewModel,navController: NavController) {
                                     .clickable(onClick = {
                                         navController.navigate(BeastMode5Routes.DetailsScreen) {
                                             popUpTo(BeastMode5Routes.HomeScreen) {
-                                                inclusive = true
+                                                inclusive = false
                                                 saveState = true
                                             }
                                         }
@@ -706,7 +706,7 @@ fun HomeScreen(viewmodel: HomeScreenViewModel,navController: NavController) {
                                     //navigate
                                     navController.navigate(BeastMode5Routes.DetailsScreen){
                                         popUpTo(BeastMode5Routes.HomeScreen){
-                                            inclusive = true
+                                            inclusive = false
                                             saveState = true
                                         }
                                     }
